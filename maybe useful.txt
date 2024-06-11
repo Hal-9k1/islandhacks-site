@@ -1,0 +1,28 @@
+https://www.youtube.com/watch?v=VegDvRLVlOI
+</footer>
+    <style>
+		.text-box {
+			border: 1px solid black;
+			padding: 10px;
+			width: 300px;
+			height: 150px;
+			resize: none;
+		}
+	</style>
+    </body>
+  <textarea class="text-box"></textarea>
+  </style>
+    </body>
+  <html>
+<head>
+
+
+
+
+<style>
+  .bold-text {
+    font-weight: bold;
+  }
+</style>
+
+<p class="bold-text">bold text here.</p>
