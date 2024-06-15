@@ -6,14 +6,19 @@
  * Orange     ffae0a
  * Yellow     f5c90c
  */
+
 html {
   scroll-behavior: smooth;
+}
+* {
+  font-family: 'FreeMono';
 }
 body {
   width: 100%;
   margin: 0;
-  height: 2500px;
-  background-image: linear-gradient(to right, #ffbd7f, #ffd4c7 50%, #ffbd7f);
+  height: 1000vh;
+  /*background-image: linear-gradient(to right, #ffbd7f, #ffd4c7 50%, #ffbd7f);*/
+  background-image: linear-gradient(to right, #fa964a, #ffffff, #fa964a)
 }
 .top {
   height: 78vh;
