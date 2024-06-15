@@ -66,7 +66,7 @@ body {
   display: block;
   flex: 1 1 auto;
   list-style-type: none;
-  font-size: 2em;
+  font-size: min(2em, 2vw);
   height: 80%;
   margin: 0 5px 0 5px;
 }
