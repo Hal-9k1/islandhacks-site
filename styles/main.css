@@ -6,15 +6,21 @@
  * Orange     ffae0a
  * Yellow     f5c90c
  */
+html {
+  scroll-behavior: smooth;
+}
 body {
   width: 100%;
   margin: 0;
+  height: 2500px;
+  background-image: linear-gradient(to right, #ffbd7f, #ffd4c7 50%, #ffbd7f);
 }
 .top {
   height: 78vh;
   height: 78svh; /* Fix weirdness with address bars on mobile */
   text-align: center;
   padding-top: 10vh;
+  background-color: white;
 }
 .top-title {
   font-size: 8em;
@@ -27,10 +33,10 @@ body {
   top: 0;
   height: 12vh;
   text-transform: uppercase;
-  background-color: black;
+  background-color: #735f58;
   color: white;
-  overflow: hidden;
   text-align: center;
+  overflow-x: clip;
 }
 .header a {
   text-decoration: none;
@@ -59,6 +65,10 @@ body {
   height: 80%;
   margin: 0 5px 0 5px;
 }
+.header-fade {
+  height: 1vh;
+  background-image: linear-gradient(to bottom, #735f58, transparent);
+}
 .nav-link {
   background-image: linear-gradient(to bottom, #dc8b58, #87695e);
 }
@@ -71,7 +81,7 @@ body {
 .content > div {
   padding: 0 5vw 1.5em 5vw;
   margin: 0 10vw 1em 10vw;
-  background-color: #eeeeee;
+  background-color: rgb(255 255 255 / 0.3);
 }
 .section-anchor {
   position: relative;
