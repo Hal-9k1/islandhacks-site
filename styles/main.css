@@ -28,7 +28,9 @@ body {
   height: 78svh; /* Fix weirdness with address bars on mobile */
   text-align: center;
   padding-top: 10vh;
-  background-color: white;
+  /* background-color: white; */
+  background-image: url('../images/background_temp2.png');
+  background-size: cover;
 }
 .top-title {
   font-size: 6em;
@@ -79,6 +81,10 @@ body {
 }
 .nav-link {
   background-image: linear-gradient(to bottom, #dc8b58, #87695e);
+  transition: transform 0.2s ease-in-out;
+}
+.nav-link:hover {
+  transform: scale(1.05);
 }
 .nav-accent {
   flex: 1 1 auto;
@@ -96,5 +102,20 @@ body {
   top: calc(-12vh - 1em);
   height: 0;
 }
-
-
+table{
+  width: 100%;
+}
+td {
+  background-color: #fa964a;
+  padding: 10px;
+  border-radius: 5px;
+  /*
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  */
+}
+/* 
+td:hover {
+  transform: scale(1.05);
+}
+*/

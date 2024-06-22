@@ -12,8 +12,9 @@ function populateScheduleTable(data) {
   data.forEach(item => {
     const row = document.createElement("tr");
     const timeCell = document.createElement("td");
-    const activityCell = document.createElement("td");
-
+    var activityCell = document.createElement("td");
+    activityCell.setAttribute("colspan", 2);
+    
     timeCell.textContent = item.time;
     activityCell.textContent = item.activity;
 
@@ -23,6 +24,7 @@ function populateScheduleTable(data) {
       const additionalCell = document.createElement("td");
       additionalCell.textContent = item.additional;
       row.appendChild(additionalCell);
+      activityCell.setAttribute("colspan", 1);
     }
     
     tableBody.appendChild(row);
