@@ -1,0 +1,65 @@
+[
+  {
+    "time": "9:00",
+    "activity": "Open doors"
+  },
+  {
+    "time": "9:15",
+    "activity": "Opening ceremony and theme reveal"
+  },
+  {
+    "time": "9:30",
+    "activity": "Collaborative game"
+  },
+  {
+    "time": "10:00",
+    "activity": "Project time",
+    "additional": "Coding workshop"
+  },
+  {
+    "time": "11:00",
+    "activity": "Project time"
+  },
+  {
+    "time": "12:00",
+    "activity": "Lunch"
+  },
+  {
+    "time": "1:30",
+    "activity": "Career panel"
+  },
+  {
+    "time": "2:00",
+    "activity": "Project time",
+    "additional": "Career fair"
+  },
+  {
+    "time": "4:00",
+    "activity": "Project time",
+    "additional": "Side games for more prizes"
+  },
+  {
+    "time": "4:30",
+    "activity": "Project time"
+  },
+  {
+    "time": "6:00",
+    "activity": "Dinner"
+  },
+  {
+    "time": "7:00",
+    "activity": "Project submission"
+  },
+  {
+    "time": "7:15",
+    "activity": "Project presentation"
+  },
+  {
+    "time": "8:00",
+    "activity": "Raffle"
+  },
+  {
+    "time": "9:00",
+    "activity": "Group picture, feedback form, and closing ceremony"
+  }
+]
