@@ -14,11 +14,11 @@ window.addEventListener('DOMContentLoaded', function() {
     let newInner = interpolateColor(originalInner, finalInner, fraction);
 
     // url(background_temp.png) top center no-repeat,
+    // document.body.style.backgroundSize = `100% auto`;
 
     document.body.style.background = `
       linear-gradient(to right, ${newOuter}, ${newInner}, ${newOuter})
     `;
-    document.body.style.backgroundSize = `100% auto`;
   });
 
   function interpolateColor(color1, color2, fraction) {
