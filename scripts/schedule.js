@@ -1,4 +1,4 @@
-fetch('schedule.json')
+fetch('scripts/schedule.json') // I guess it looks from one directory up?
 .then(response => response.json())  
 .then(data => {
   // data is now an array containing the schedule objects
@@ -7,8 +7,7 @@ fetch('schedule.json')
 .catch(error => console.error(error));
 
 function populateScheduleTable(data) {
-  // This function iterates through the data array and dynamically creates the table rows using DOM manipulation.
-  const tableBody = document.querySelector("table tbody"); // Assuming you have a tbody element in your table
+  const tableBody = document.querySelector("table tbody");
   data.forEach(item => {
     const row = document.createElement("tr");
     const timeCell = document.createElement("td");

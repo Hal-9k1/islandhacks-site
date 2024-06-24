@@ -12,6 +12,7 @@ html {
 }
 * {
   font-family: 'Roboto Mono', monospace;
+  /* border: solid 1px red; */
 }
 body {
   width: 100%;
@@ -102,6 +103,29 @@ body {
   top: calc(-12vh - 1em);
   height: 0;
 }
+
+/* 
+.faq-wrapper {
+  background-color: #fa964a;
+  border-radius: 10px;
+}
+*/
+.faq {
+  background-color: #fa964a;
+  border-radius: 10px;
+  margin: -1em 0;
+}
+.faq h3 {
+  padding: 0px;
+  cursor: pointer;
+  margin-bottom: 0;
+}
+.faq p {
+  margin: 0 10px;
+  max-height: 0;
+  transition: max-height 0.2s ease-in-out;
+  overflow: hidden;
+}
 table{
   width: 100%;
 }
@@ -109,13 +133,4 @@ td {
   background-color: #fa964a;
   padding: 10px;
   border-radius: 5px;
-  /*
-  cursor: pointer;
-  transition: transform 0.2s ease-in-out;
-  */
 }
-/* 
-td:hover {
-  transform: scale(1.05);
-}
-*/
