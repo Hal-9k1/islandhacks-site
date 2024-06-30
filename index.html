@@ -10,21 +10,21 @@
   <link href="styles/main.css" rel="stylesheet" />
 </head>
 <body>
-  <div class="top" id="top">
+  <header class="top" id="top">
     <h1 class="top-title">IslandHacks 2024</h1>
     <h2 class="datetime">Sep 7 9:00-21:00</h2>
     <h2 class="countdown"></h2>
-  </div>
-  <div class="header">
+  </header>
+  <nav class="header">
     <ul>
-      <li class="nav-link">
-        <a href="#competition">
-          <span>Competition</span>
+      <li class="nav-home">
+        <a href="#top">
+          <span>ICON</span>
         </a>
       </li>
       <li class="nav-link">
-          <a href="#FAQs">
-          <span>FAQs</span>
+        <a href="#competition">
+          <span>Competition</span>
         </a>
       </li>
       <li class="nav-link">
@@ -32,9 +32,9 @@
           <span>Schedule</span>
         </a>
       </li>
-      <li class="nav-home">
-        <a href="#top">
-          <span>ICON</span>
+      <li class="nav-link">
+          <a href="#FAQs">
+          <span>FAQs</span>
         </a>
       </li>
       <li class="nav-link">
@@ -54,29 +54,45 @@
       </li>
     </ul>
     <div class="header-fade"></div>
-  </div>
-  <div class="content">
-    <div>
+  </nav>
+  <main class="content">
+    <section>
       <div class="section-anchor" id="competition"></div>
       <h1>Competition</h1>
       <p>IslandHacks is a 12-hour hackathon (social coding event) open to all Alameda middle and high school students. (address, date time info, cost, audience)</p>
-    </div>
-    <div>
+    </section>
+    <section>
+      <div class="section-anchor" id="schedule"></div>
+      <h1>Schedule (Tentative)</h1> <!-- Borrowed info from Jacky's tentative schedule, so not definite -->
+      <table>
+        <thead>
+          <tr>
+            <td><b>Time</b></td>
+            <td colspan="2"><b>Activity</b></td>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </section>
+    <section>
       <div class="section-anchor" id="FAQs"></div>
       <h1>FAQs</h1>
       <div class="faq-wrapper">
         <div class="faq">
           <label class="faq-title">
-            <input type="radio" name="faq">
+            <input type="checkbox" name="faq">
+            <span class="faq-icon">></span>
             Question 1?
           </label>
           <div class="faq-content">
-            <p>There is one correct sentence here. <br><br><br><br><br><br> There are two correct sentences here.</p> <!-- Why is the gap between q1 and q2 smaller? -->
+            <p>There is one correct sentence here. <br><br><br> There are two correct sentences here.</p> <!-- Why is the gap between q1 and q2 smaller? -->
           </div>
         </div>
         <div class="faq">
           <label class="faq-title">
-            <input type="radio" name="faq">
+            <input type="checkbox" name="faq">
+            <span class="faq-icon">></span>
             Question 2?
           </label>
           <div class="faq-content">
@@ -85,7 +101,8 @@
         </div>
         <div class="faq">
           <label class="faq-title">
-            <input type="radio" name="faq">
+            <input type="checkbox" name="faq">
+            <span class="faq-icon">></span>
             Question 3?
           </label>
           <div class="faq-content">
@@ -94,7 +111,8 @@
         </div>
         <div class="faq">
           <label class="faq-title">
-            <input type="radio" name="faq">
+            <input type="checkbox" name="faq">
+            <span class="faq-icon">></span>
             Question 4?
           </label>
           <div class="faq-content">
@@ -103,7 +121,8 @@
         </div>
         <div class="faq">
           <label class="faq-title">
-            <input type="radio" name="faq">
+            <input type="checkbox" name="faq">
+            <span class="faq-icon">></span>
             Question 5?
           </label>
           <div class="faq-content">
@@ -111,28 +130,15 @@
           </div>
         </div>
       </div>
-    </div>
-    <div>
-      <div class="section-anchor" id="schedule"></div>
-      <h1>Schedule (We can change this)</h1> <!-- Borrowed info from Jacky's tentative schedule, so not definite -->
-      <table>
-        <thead>
-          <tr>
-            <td>Time</td>
-            <td colspan="2">Activity</td>
-          </tr>
-        </thead>
-        <tbody>
-        </tbody>
-      </table>
-    </div>
-    <div>
+    </section>
+    <section>
       <div class="section-anchor" id="sponsors"></div>
       <h1>Sponsors</h1>
       <p>Thank you to these groups for making this event possible!</p>
-      <p>Interested in sponsoring us? Contact us at (email).</p>
-    </div>
-  </div>
+      <p>Interested in sponsoring us? Contact us at <a href="mailto:team@islandhacks.org">team@islandhacks.org</a>.</p>
+      <!-- Honestly probably just a collection of images with links? This shouldn't take long. Exelixis, Encinal-->
+    </section>
+  </main>
   <script src="scripts/background.js"></script>
   <script src="scripts/countdown.js"></script>
   <script src="scripts/schedule.js"></script>

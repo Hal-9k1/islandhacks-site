@@ -23,8 +23,7 @@ body {
 .top {
   display: flex;
   flex-direction: column;
-  min-height: 78svh;
-  /* height: 78vh;
+  height: 78vh;
   height: 78svh; /* Fix weirdness with address bars on mobile */
   text-align: center;
   padding-top: 10vh;
@@ -33,10 +32,10 @@ body {
   background-size: cover;
 }
 .top-title {
-  font-size: 6em;
+  font-size: min(6em, 10vh, 15vw);
 }
 .top h2 {
-  font-size: 4em;
+  font-size: min(4em, 8vh, 10vw);
 }
 .header {
   position: sticky;
@@ -47,6 +46,7 @@ body {
   color: white;
   text-align: center;
   overflow-x: clip;
+  z-index: 1;
 }
 .header a {
   text-decoration: none;
@@ -88,11 +88,12 @@ body {
 }
 .nav-accent {
   flex: 1 1 auto;
+  background-image: linear-gradient(to bottom, #ffae0a, #dc8b58);
 }
 .content h1 {
   text-align: center;
 }
-.content > div {
+.content > section {
   padding: 0 5vw 1.5em 5vw;
   margin: 0 10vw 1em 10vw;
   background-color: rgb(255 255 255 / 0.3);
@@ -104,12 +105,7 @@ body {
   height: 0;
 }
 
-/* 
-.faq-wrapper {
-  background-color: #fa964a;
-  border-radius: 10px;
-}
-*/
+/* FAQs */
 .faq {
   background-color: #fa964a;
   border-radius: 10px;
@@ -124,14 +120,22 @@ body {
 .faq-content > *:last-child {
   margin-bottom: 0;
 }
-.faq-title:has(input:checked) ~ .faq-content {
+.faq-title:has(input:checked) + .faq-content {
   opacity: 1;
   font-size: 1em;
   transition: opacity 0.125s 0.375s, font-size 0.25s 0.125s;
 }
+.faq-icon {
+  float: left;
+  margin-right: 5px;
+  transition: transform 0.25s ease-in-out;
+}
+.faq-title:has(input:checked) .faq-icon {
+  transform: rotate(90deg);
+}
 .faq-title {
   padding: 2px;
-  font-size: 1.25em;
+  font-size: 1em;
   cursor: pointer;
   margin-bottom: 0;
   display: block;
@@ -139,10 +143,13 @@ body {
 .faq-title input {
   display: none;
 }
+
+/* Schedule */
 table {
   width: 100%;
 }
 td {
+  font-size: 1em;
   background-color: #fa964a;
   padding: 10px;
   border-radius: 5px;

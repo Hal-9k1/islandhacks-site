@@ -19,6 +19,18 @@ window.addEventListener('DOMContentLoaded', function() {
     document.body.style.background = `
       linear-gradient(to right, ${newOuter}, ${newInner}, ${newOuter})
     `;
+    
+    /*
+    const contentSections = document.querySelectorAll('td');
+    const faqSections = document.querySelectorAll('.faq');
+    contentSections.forEach(section => {
+      section.style.backgroundColor = `${interpolateColor(newInner, newOuter, 0.75)}`;
+    });
+    faqSections.forEach(section => {
+      section.style.backgroundColor = `${interpolateColor(newInner, newOuter, 0.75)}`;
+    });
+    */
+    
   });
 
   function interpolateColor(color1, color2, fraction) {
