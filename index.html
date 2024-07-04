@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
   
   <title>IslandHacks</title>
-  <link href="styles/main.css" rel="stylesheet" />
+  <link href="/styles/main.css" rel="stylesheet" />
 </head>
 <body>
   <header class="top" id="top">
@@ -38,7 +39,12 @@
         </a>
       </li>
       <li class="nav-link">
-        <a href="sponsors.html">
+        <a href="about">
+          <span>About Us</span>
+        </a>
+      </li>
+      <li class="nav-link">
+        <a href="sponsors">
           <span>Sponsors</span>
         </a>
       </li>
@@ -59,7 +65,11 @@
     <section>
       <div class="section-anchor" id="competition"></div>
       <h1>Competition</h1>
-      <p>IslandHacks is a 12-hour hackathon (social coding event) open to all Alameda middle and high school students. (address, date time info, cost, audience)</p>
+      <p>IslandHacks is a 12-hour student-organized coding marathon (called a "hackathon") open to all middle and high school students in the Alameda area. <span class="comp-info">Admission is free</span> and three meals are provided. Tech-related prizes are available at the end of the event through raffle or by student vote after project presentation. IslandHacks 2024 is generously hosted by Exelixis at their office on Bay Farm Island, <span class="comp-info">1851 Harbor Bay Parkway.</span></p>
+      <h1>What is a "hackathon?"</h1>
+      <p>A hackathon is a social coding event where like-minded coders come together, optionally in teams, to design, write, test, and present a project all within the duration of the event.</p>
+      <h1>Theme</h1>
+      <p>The theme will be announced during the event. Check back here for a recap.</p>
     </section>
     <section>
       <div class="section-anchor" id="schedule"></div>
@@ -86,7 +96,7 @@
             Question 1?
           </label>
           <div class="faq-content">
-            <p>There is one correct sentence here. <br><br><br> There are two correct sentences here.</p> <!-- Why is the gap between q1 and q2 smaller? -->
+            <p>There is one correct sentence here. <br><br><br> There are two correct sentences here.</p>
           </div>
         </div>
         <div class="faq">
@@ -123,25 +133,29 @@
           <label class="faq-title">
             <input type="checkbox" name="faq">
             <span class="faq-icon">></span>
-            Question 5?
+            I have another question!
           </label>
           <div class="faq-content">
-            Answer 5.
+            Contact us at <a href="mailto:team@islandhacks.org">team@islandhacks.org</a>
           </div>
         </div>
       </div>
     </section>
-    <!--
-    <section>
-      <div class="section-anchor" id="sponsors"></div>
-      <h1>Sponsors</h1>
-      <h4>Thank you to these groups for making this event possible!</h4>
-      <h4>Interested in sponsoring us? Contact us at <a href="mailto:team@islandhacks.org">team@islandhacks.org</a>.</h4>
-    </section>
-    -->
   </main>
-  <script src="scripts/background.js"></script>
-  <script src="scripts/countdown.js"></script>
-  <script src="scripts/schedule.js"></script>
+  <script src="/scripts/background.js"></script>
+  <script src="/scripts/countdown.js"></script>
+  <script src="/scripts/schedule.js"></script>
+
+  <!-- animation wizardry right here-->
+  <div class="ocean">
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+  <div class="island"></div>
+  <div class="cloud cloud1"></div>
+  <div class="cloud cloud2"></div>
+  <div class="bird bird1"></div>
+  <div class="bird bird2"></div>
+  
 </body>
 </html>
