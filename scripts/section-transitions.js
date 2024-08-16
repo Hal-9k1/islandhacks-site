@@ -1,3 +1,4 @@
+document.body.className += ' js';
 document.addEventListener('DOMContentLoaded', () => {
   const sections = document.querySelectorAll('section');
 
