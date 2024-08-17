@@ -36,7 +36,7 @@
             Tech-related prizes are available at the end of the event through raffle or by student
             vote after project presentation. IslandHacks 2024 is generously hosted by Exelixis at
             their office on Bay Farm Island,
-            <span class="comp-info">1951 Harbor Bay Parkway.</span>
+            <span class="comp-info"><a href="about:blank" target="_blank">1951 Harbor Bay Parkway</a></span>.
           </p>
         </div>
         <div class="image-content">
@@ -49,7 +49,8 @@
           <p>
             A hackathon is a social coding event where like-minded coders come together, optionally
             in teams, to design, write, test, and present a project all within the duration of the
-            event.
+            event. Hackathons often have a theme to help guide participants&apos; ideas for the
+            competition.
           </p>
         </div>
       </div>
@@ -128,7 +129,7 @@
             I have another question!
           </label>
           <div class="faq-content">
-            Contact us at <a href="mailto:team@islandhacks.org">team@islandhacks.org</a>
+            Contact us at <a href="mailto:team@islandhacks.org">team@islandhacks.org</a>!
           </div>
         </div>
       </div>
