@@ -10,11 +10,11 @@ window.addEventListener('DOMContentLoaded', function() {
   function updateBackground(scrollPos) {
     const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
     const fraction = Math.min(Math.max(scrollPos / maxScroll, 0), 1);
-    const newOuter = interpolateColor(originalOuter, finalOuter, fraction);
-    const newInner = interpolateColor(originalInner, finalInner, fraction);
+    const newOuter = interpolateColor(originalOuter, finalOuter, fraction).join(',');
+    const newInner = interpolateColor(originalInner, finalInner, fraction).join(',');
 
     document.body.style.background = `
-      linear-gradient(to right, rgb(${newOuter.join(',')}), rgb(${newInner.join(',')}), rgb(${newOuter.join(',')}))
+      linear-gradient(to right, rgb(${newOuter}), rgb(${newInner}), rgb(${newOuter}))
     `;
   }
 
@@ -34,4 +34,5 @@ window.addEventListener('DOMContentLoaded', function() {
       ticking = true;
     }
   });
+  updateBackground(0);
 });

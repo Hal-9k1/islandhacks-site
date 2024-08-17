@@ -31,44 +31,6 @@ h1, h2, h3 {
   margin-bottom: 0.5em;
 }
 
-.top {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 80vh;
-  text-align: center;
-  padding: 15vh 5vw 5vh;
-  background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.8));
-  background-size: cover;
-  background-position: center;
-}
-
-.top-title {
-  font-size: clamp(2rem, 8vw, 6rem);
-  margin: 0.25em 0;
-}
-
-.top h2 {
-  font-size: clamp(1.5rem, 5vw, 4rem);
-  margin: 0.25em 0;
-}
-
-.top-register-link button {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  border-radius: 10px;
-  padding: 20px;
-  border: none;
-  background-color: var(--color-peach);
-  font-size: 3em;
-  transition: transform 0.5s;
-  cursor: pointer;
-}
-.top-register-link button:hover {
-  transform: scale(1.1);
-}
-
 .content {
   padding-top: 6vh;
 }
@@ -108,16 +70,6 @@ h1, h2, h3 {
   transform: translateY(0);
 }
 
-@media (max-width: 768px) {
-  .top {
-    padding-top: 20vh;
-  }
-
-  .content {
-    padding-top: 15vh;
-  }
-}
-
 .subsection {
   margin-bottom: 2em;
 }
@@ -147,6 +99,10 @@ h1, h2, h3 {
 }
 
 @media (max-width: 768px) {
+  .content {
+    padding-top: 15vh;
+  }
+
   .subsection.with-image {
     flex-direction: column;
   }
@@ -155,72 +111,3 @@ h1, h2, h3 {
     order: -1; /* This will place the image above the text on mobile */
   }
 }
-
-/* FAQs */
-.faq {
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 10px;
-  margin-bottom: 1em;
-  overflow: hidden;
-}
-
-.faq-content {
-  opacity: 0;
-  font-size: 0em;
-  transition: opacity 0.125s, font-size 0.25s 0.125s;
-  padding: 0 1em;
-}
-
-.faq-content > *:last-child {
-  margin-bottom: 0;
-}
-
-.faq-title:has(input:checked) + .faq-content {
-  opacity: 1;
-  font-size: 1em;
-  transition: opacity 0.125s 0.375s, font-size 0.25s 0.125s;
-}
-
-.faq-icon {
-  float: left;
-  margin-right: 5px;
-  transition: transform 0.25s ease-in-out;
-}
-
-.faq-title:has(input:checked) .faq-icon {
-  transform: rotate(90deg);
-}
-
-.faq-title {
-  padding: 1em;
-  font-size: 1em;
-  cursor: pointer;
-  margin-bottom: 0;
-  display: block;
-  background-color: var(--color-peach);
-  font-weight: bold;
-}
-
-.faq-title input {
-  display: none;
-}
-
-/* Schedule */
-table {
-  width: 100%;
-  border-collapse: separate;
-  border-spacing: 0 10px;
-}
-
-td {
-  font-size: 1em;
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 1em;
-  border-radius: 5px;
-}
-
-thead td {
-  background-color: var(--color-peach);
-  font-weight: bold;
-}
-
