@@ -21,7 +21,7 @@
       <button>Register now!</button>
     </a>
   </header>
-  <!--#include virtual="/unserved/navbar.frag.html" -->
+  <!--#include virtual="/navbar.frag.html" -->
   <main class="content">
     <!-- Don't fade in first section: -->
     <section>
@@ -134,7 +134,7 @@
       </div>
     </section>
   </main>
-  <!--#include virtual="/unserved/footer.frag.js" -->
+  <!--#include virtual="/footer.frag.html" -->
   <script src="/scripts/background.js"></script>
   <script src="/scripts/countdown.js"></script>
   <script src="/scripts/schedule.js"></script>

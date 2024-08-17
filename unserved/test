@@ -1,2 +1,0 @@
-ls .
-/usr/sbin/httpd -d . -f unserved/httpd.conf -X

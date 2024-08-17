@@ -14,10 +14,10 @@
   <link rel="stylesheet" href="/styles/about.css" />
 </head>
 <body>
-  <!--#include virtual="/unserved/navbar.frag.html" -->
+  <!--#include virtual="/navbar.frag.html" -->
   <main class="content">
     <h1>Blog</h1>
   </main>
-  <!--#include virtual="/unserved/footer.frag.js" -->
+  <!--#include virtual="/footer.frag.html" -->
 </body>
 </html>

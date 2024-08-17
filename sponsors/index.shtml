@@ -12,7 +12,7 @@
   <link href="/styles/sponsors.css" rel="stylesheet" />
 </head>
 <body>
-  <!--#include virtual="/unserved/navbar.frag.html" -->
+  <!--#include virtual="/navbar.frag.html" -->
   <main class="content">
     <h1>Our Sponsors</h1>
     <p class="sponsor-subtitle">
@@ -37,6 +37,6 @@
       </div>
     </div>
   </main>
-  <!--#include virtual="/unserved/footer.frag.js" -->
+  <!--#include virtual="/footer.frag.html" -->
 </body>
 </html>
