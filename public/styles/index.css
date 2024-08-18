@@ -28,18 +28,13 @@
   padding: 20px;
   border: none;
   background-color: var(--color-peach);
-  font-size: 3em;
+  font-size: clamp(1.5rem, 5vw, 4rem);
   transition: transform 0.5s;
   cursor: pointer;
 }
+
 .top-register-link button:hover {
   transform: scale(1.1);
-}
-
-@media (max-width: 768px) {
-  .top {
-    padding-top: 20vh;
-  }
 }
 
 /* FAQs */

@@ -16,7 +16,7 @@
     <h2 class="datetime">Saturday Sep 7 9:00-21:00</h2>
     <h2 class="countdown"></h2>
     <a class="top-register-link" href="about:blank" target="_blank">
-      <button>Register now!</button>
+      <button type="button">Register now!</button>
     </a>
   </header>
   <!--#include virtual="/navbar.frag.html" -->
@@ -30,15 +30,23 @@
           <p>
             IslandHacks is a 12-hour student-organized coding marathon (called a "hackathon") open
             to all middle and high school students in the Alameda area.
-            <span class="comp-info">Admission is free</span> and three meals are provided.
+            <span class="comp-info">Admission is free</span> and three meals are catered.
             Tech-related prizes are available at the end of the event through raffle or by student
             vote after project presentation. IslandHacks 2024 is generously hosted by Exelixis at
             their office on Bay Farm Island,
-            <span class="comp-info"><a href="about:blank" target="_blank">1951 Harbor Bay Parkway</a></span>.
+            <span class="comp-info">
+              <a href="https://maps.app.goo.gl/r2NMrKX2rk4EWzx18" target="_blank">
+                1951 Harbor Bay Parkway.
+              </a>
+            </span>
           </p>
         </div>
         <div class="image-content">
-          <img src="/images/competition.JPG" alt="Students participating in a hackathon" class="subsection-image" />
+          <img
+            src="/images/competition.JPG"
+            alt="Students participating in a hackathon"
+            class="subsection-image"
+          />
         </div>
       </div>
       <div class="subsection">
@@ -58,7 +66,11 @@
           <p>The theme will be announced during the event. Check back here for a recap.</p>
         </div>
         <div class="image-content">
-          <img src="/images/islandhacks_logo_no_title.webp" alt="Representation of the hackathon theme" class="subsection-image" />
+          <img
+            src="/images/islandhacks_logo_no_title.webp"
+            alt="Representation of the hackathon theme"
+            class="subsection-image"
+          />
         </div>
       </div>
     </section>
@@ -134,6 +146,7 @@
     </section>
   </main>
   <!--#include virtual="/footer.frag.html" -->
+  <script src="/scripts/detect.js"></script>
   <script src="/scripts/background.js"></script>
   <script src="/scripts/countdown.js"></script>
   <script src="/scripts/schedule.js"></script>
