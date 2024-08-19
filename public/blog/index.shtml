@@ -14,7 +14,66 @@
   <!--#include virtual="/navbar.frag.html" -->
   <main class="content">
     <h1>Blog</h1>
+    <section class="fade-in">
+      <h2>Match 16, 2024</h2>
+      <p>
+        It was a blast hosting Hackpack (our crash course on the basics of hosting a hackathon) with
+        the new organizers. They were all so attentive and had lots of valuable insights. It was a
+        good idea incorporating discussion questions in this presentation because there's some ideas
+        they brought out that we'll definitely incorporate in our hackathon (we won't say what just
+        yet, it's a teaser for now!)
+      </p>
+      <p>
+        After we gave an overview of the different aspects of planning a hackathon, we asked the new
+        organizers what they would want to focus on, and I'd say their roles fit their qualities
+        really well. The coding whizzes (Eddy and Xavier) are revamping the website (I'm excited to
+        see them have fun and impress us with what they do), Miaoying's design will help with
+        advertising, and Sunny's organization will definitely be a strength in our budgeting. One
+        thing I found the most exciting was that all the new organizers were willing to explore out
+        of their comfort zones and learn how to contact sponsors. Outreach is a great skill to have,
+        and we'll do our best to show them the ropes!
+      </p>
+      <p>
+        The senior organizers were just as sharp too --- Though it wasn't mandatory for them to help
+        out with Hackpack, they diligently came. Bryan helped with planning the presentation and
+        aiding the discussion, Avery provided valuable insights, and Allen helped us provide the
+        IslandHacks resources for the organizers.
+      </p>
+      <p>
+        We're on the tail end of getting the logistics and scaffolding ready, and I'm excited for
+        the following weeks --- we're gonna have a great time organizing IslandHacks again!
+      </p>
+    </section>
+    <section class="fade-in">
+      <h2>March 13, 2024</h2>
+      <p>
+        We had a get-to-know-each-other meeting between the senior organizers and the newcomers and
+        went over the goals of this upcoming hackathon. I'd say it went pretty well. Everyone's
+        excited, super friendly as always, and the newcomers weren't afraid to ask any questions
+        they had at the moment. It's definitely a good idea to do a crash course with them soon to
+        get them on board as soon as possible. I'm looking forward to it!
+      </p>
+    </section>
+    <section class="fade-in">
+      <h2>Feburary 7, 2024</h2>
+      <p>
+        Nael and I looked over the feedback form from IslandHacks 2023 and jotted down a list of
+        what we should focus on for the next one. We're gonna expand this for sure, but I wouldn't
+        reveal everything we planned just yet. :] (Actually I'll give you one. This blog is an
+        addition to keep you guys updated.)
+      </p>
+      <p>
+        Although it took us six months to plan the original hackathon, I believe we can still host a
+        hackathon by the end of May. Most of that time in the beginning was figuring out what we're
+        doing and getting off the ground. We now have the resources from last year to bounce off of
+        and new organizers to recruit, but that doesn't mean we should slow down. Let the grind
+        begin!
+      </p>
+    </section>
   </main>
   <!--#include virtual="/footer.frag.html" -->
+  <script src="/scripts/detect.js"></script>
+  <script src="/scripts/section-transitions.js"></script>
+  <script src="/scripts/background.js"></script>
 </body>
 </html>
