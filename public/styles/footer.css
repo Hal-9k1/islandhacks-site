@@ -50,6 +50,10 @@ footer {
   text-decoration: none;
   transition: color 0.3s ease;
 }
+.footer-section a img {
+  width: 100%;
+  height: 100%;
+}
 
 .footer-section a:hover {
   color: var(--color-orange);
