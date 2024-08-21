@@ -11,7 +11,51 @@
   <link rel="stylesheet" href="/styles/about.css" />
 </head>
 <body>
-  {% include navbar.html %}
+  <nav class="header">
+    <ul>
+      <li class="nav-home">
+        <a href="/">
+          <img src="/images/islandhacks_logo_no_title.webp" alt="ICON" class="nav-logo">
+        </a>
+      </li>
+      <li class="nav-link">
+        <a href="/#competition">
+          <span>Competition</span>
+        </a>
+      </li>
+      <li class="nav-link">
+        <a href="/#schedule">
+          <span>Schedule</span>
+        </a>
+      </li>
+      <li class="nav-link">
+          <a href="/#FAQs">
+          <span>FAQs</span>
+        </a>
+      </li>
+      <li class="nav-link">
+        <a href="/blog">
+          <span>Blog</span>
+        </a>
+      </li>
+      <li class="nav-link">
+        <a href="/sponsors">
+          <span>Sponsors</span>
+        </a>
+      </li>
+      <li class="nav-link nav-accent">
+        <a href="https://hcb.hackclub.com/donations/start/islandhacks" target="_blank">
+          <span>Donate</span>
+        </a>
+      </li>
+      <li class="nav-link nav-accent">
+        <a href="about:blank" target="_blank">
+          <span>Register</span>
+        </a>
+      </li>
+    </ul>
+    <div class="header-fade"></div>
+  </nav>
   <main class="content">
     <h1>Blog</h1>
     <section class="fade-in">
@@ -71,9 +115,28 @@
       </p>
     </section>
   </main>
-  {% include footer.html %}
+  <footer>
+    <section class="footer-section">
+      <h1>Connect with us</h1>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/islandhacks/" target="_blank" class="social-icon">
+          <img src="/images/instagram.svg" alt="Instagram" />
+        </a>
+        <a href="Invite Link" target="_blank" class="social-icon">
+          <img src="/images/discord-mark-black.svg" alt="Discord" />
+        </a>
+        <a href="mailto:team@islandhacks.org" target="_blank" class="social-icon">
+          <img src="/images/email.svg" alt="Email" />
+        </a>
+      </div>
+      <p class="copyright">
+        &copy; 2024 IslandHacks. All Rights Reserved
+        <br />
+        IslandHacks is fiscally sponsored by The Hack Foundation (EIN: 81-2908499)
+      </p>
+    </section>
+  </footer>
   <script src="/scripts/detect.js"></script>
   <script src="/scripts/section-transitions.js"></script>
-  <script src="/scripts/background.js"></script>
 </body>
 </html>

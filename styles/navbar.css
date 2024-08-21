@@ -1,11 +1,12 @@
 .header {
+  --header-bg: rgb(from black r g b / 80%);
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   height: 12vh;
   text-transform: uppercase;
-  background-color: var(--color-gray-brown);
+  background-color: var(--header-bg);
   color: white;
   text-align: center;
   overflow-x: clip;
@@ -46,7 +47,7 @@
 
 .header-fade {
   height: 1vh;
-  background-image: linear-gradient(to bottom, var(--color-gray-brown), transparent);
+  background-image: linear-gradient(to bottom, var(--header-bg), transparent);
 }
 
 .nav-home {
@@ -70,7 +71,7 @@
 }
 
 .nav-link {
-  background-image: linear-gradient(to bottom, var(--color-peach), var(--color-gray-brown));
+  background-color: var(--color-tangerine);
   transition: transform 0.2s ease-in-out;
   border-radius: 45px;
 }
@@ -81,7 +82,7 @@
 
 .nav-accent {
   flex: 1 1 auto;
-  background-image: linear-gradient(to bottom, var(--color-orange), var(--color-peach));
+  background-image: linear-gradient(to bottom, var(--color-orange), var(--color-tangerine));
 }
 
 @media (max-width: 768px) {

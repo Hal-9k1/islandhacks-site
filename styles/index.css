@@ -4,20 +4,21 @@
   justify-content: center;
   min-height: 80vh;
   text-align: center;
-  padding: 15vh 5vw 5vh;
-  background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.8));
-  background-size: cover;
-  background-position: center;
+  padding: 15vh 5vw 0;
 }
-
 .top-title {
   font-size: clamp(2rem, 8vw, 6rem);
   margin: 0.25em 0;
 }
 
+.top h1 {
+  margin: 0;
+}
+
 .top h2 {
-  font-size: clamp(1.5rem, 5vw, 4rem);
-  margin: 0.25em 0;
+  font-size: clamp(1.5rem, 5vw, 3rem);
+  white-space: nowrap;
+  margin: 0 0 0.25em 0;
 }
 
 .top-register-link button {
@@ -27,7 +28,7 @@
   border-radius: 10px;
   padding: 20px;
   border: none;
-  background-color: var(--color-peach);
+  background-color: var(--color-tangerine);
   font-size: clamp(1.5rem, 5vw, 4rem);
   transition: transform 0.5s;
   cursor: pointer;
@@ -79,7 +80,7 @@
   cursor: pointer;
   margin-bottom: 0;
   display: block;
-  background-color: var(--color-peach);
+  background-color: var(--color-tangerine);
   font-weight: bold;
 }
 
@@ -102,7 +103,7 @@ td {
 }
 
 thead td {
-  background-color: var(--color-peach);
+  background-color: var(--color-tangerine);
   font-weight: bold;
 }
 
