@@ -1,33 +1,45 @@
 class Countdown {
   #elem;
+  #timeElems;
+  #labelElems;
+  #elemOrigClass;
   #goalTimestamp;
   #pollSyncInterval;
   #initSyncTimestamp;
 
   constructor(elem, goalTimestamp) {
     this.#elem = elem;
+    this.#timeElems = elem.querySelectorAll(".countdown-element");
+    this.#labelElems = elem.querySelectorAll(".countdown-label");
+    if (this.#timeElems.length !== 4 || this.#labelElems.length !== 4) {
+      throw new Error("Bad countdown element");
+    }
+    this.#elemOrigClass = elem.className;
     this.#goalTimestamp = goalTimestamp;
     this.#update();
-    this.#pollSyncInterval = setInterval(this.#pollSync.bind(this), 1);
+    this.#pollSyncInterval = setInterval(this.#pollSync, 1);
   }
 
-  #pollSync() {
+  #pollSync = () => {
     if (this.#initSyncTimestamp === undefined) {
       this.#initSyncTimestamp = Date.now();
       this.#update();
     } else if (Math.floor(this.#initSyncTimestamp / 1000) !== Math.floor(Date.now() / 1000)) {
       clearInterval(this.#pollSyncInterval);
       this.#update();
-      setInterval(this.#update.bind(this), 1000);
+      setInterval(this.#update, 1000);
     }
   }
 
-  #update() {
+  #update = () => {
     const now = Date.now();
     if (isNaN(this.#goalTimestamp) || this.#goalTimestamp < now) {
-      this.#elem.innerText = "Event has passed";
+      this.#elem.className = this.#elemOrigClass;
+      this.#elem.innerText = "Happy hacking!";
       return;
     }
+
+    this.#elem.className = this.#elemOrigClass + " countdown-enabled";
 
     const deltaMs = this.#goalTimestamp - now;
     const SECONDS_IN_MINUTE = 60;
@@ -40,12 +52,20 @@ class Countdown {
     const deltaHr = Math.floor(deltaMin / MINUTES_IN_HOUR);
     const deltaDay = Math.floor(deltaHr / HOURS_IN_DAY);
 
-    const sec = (deltaSec % SECONDS_IN_MINUTE).toString().padStart(2, '0');
-    const min = (deltaMin % MINUTES_IN_HOUR).toString().padStart(2, '0');
-    const hr = (deltaHr % HOURS_IN_DAY).toString().padStart(2, '0');
-    const day = deltaDay.toString().padStart(2, '0');
+    const sec = deltaSec % SECONDS_IN_MINUTE;
+    const min = deltaMin % MINUTES_IN_HOUR;
+    const hr = deltaHr % HOURS_IN_DAY;
+    const day = deltaDay;
 
-    this.#elem.innerText = `${day}:${hr}:${min}:${sec}`;
+    this.#timeElems[0].innerText = day.toString().padStart(2, '0');
+    this.#timeElems[1].innerText = hr.toString().padStart(2, '0');
+    this.#timeElems[2].innerText = min.toString().padStart(2, '0');
+    this.#timeElems[3].innerText = sec.toString().padStart(2, '0');
+
+    this.#labelElems[0].innerText = day === 1 ? "day" : "days";
+    this.#labelElems[1].innerText = min === 1 ? "min" : "mins";
+    this.#labelElems[2].innerText = hr === 1 ? "hr" : "hrs";
+    this.#labelElems[3].innerText = sec === 1 ? "sec" : "secs";
   }
 }
 
