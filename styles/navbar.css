@@ -1,11 +1,12 @@
 .header {
+  --header-bg: rgb(from black r g b / 80%);
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  height: 12vh;
+  height: 8vh;
   text-transform: uppercase;
-  background-color: var(--color-gray-brown);
+  background-color: var(--header-bg);
   color: white;
   text-align: center;
   overflow-x: clip;
@@ -46,17 +47,19 @@
 
 .header-fade {
   height: 1vh;
-  background-image: linear-gradient(to bottom, var(--color-gray-brown), transparent);
+  background-image: linear-gradient(to bottom, var(--header-bg), transparent);
 }
 
-.nav-home {
+.nav-home a {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 
 .nav-logo {
-  max-height: 10vh;
+  max-height: 6vh;
   width: auto;
   object-fit: cover;
   border-radius: 50%;
@@ -70,18 +73,20 @@
 }
 
 .nav-link {
-  background-image: linear-gradient(to bottom, var(--color-peach), var(--color-gray-brown));
   transition: transform 0.2s ease-in-out;
   border-radius: 45px;
+  /*background-color: var(--color-tangerine);*/
 }
 
 .nav-link:hover {
   transform: scale(1.05);
+  text-decoration: underline;
 }
 
 .nav-accent {
   flex: 1 1 auto;
-  background-image: linear-gradient(to bottom, var(--color-orange), var(--color-peach));
+  /*background-image: linear-gradient(to bottom, var(--color-orange), var(--color-tangerine));*/
+  font-weight: bold;
 }
 
 @media (max-width: 768px) {

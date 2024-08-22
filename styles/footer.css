@@ -31,7 +31,7 @@ footer {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: var(--color-peach);
+  background-color: var(--color-tangerine);
   color: white;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
@@ -49,6 +49,10 @@ footer {
   color: var(--color-gray-brown);
   text-decoration: none;
   transition: color 0.3s ease;
+}
+.footer-section a img {
+  width: 100%;
+  height: 100%;
 }
 
 .footer-section a:hover {

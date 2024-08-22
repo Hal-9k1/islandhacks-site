@@ -2,7 +2,8 @@
   --color-gray: #7a807e;
   --color-gray-brown: #735f58;
   --color-brown: #b87561;
-  --color-peach: #fa964a;
+  --color-tangerine: #fa964a;
+  --color-peach: #ffcf7d;
   --color-orange: #ffae0a;
   --color-yellow: #f5c90c;
   --color-dark-purple: #510051;
@@ -23,8 +24,7 @@ body {
   min-height: 100vh;
   font-size: 16px;
   line-height: 1.6;
-  background: linear-gradient(45deg, var(--color-peach), var(--color-yellow));
-  background-attachment: fixed;
+  background-color: var(--color-peach);
 }
 
 h1, h2, h3 {
