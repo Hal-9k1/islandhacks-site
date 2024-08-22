@@ -96,7 +96,7 @@
           <label class="faq-title">
             <input type="checkbox" name="faq" />
             <span class="faq-icon">&gt;</span>
-            Question 1?
+            Where is 
           </label>
           <div class="faq-content">
             There is one correct sentence here. <br>There are two correct sentences here.
