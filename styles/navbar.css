@@ -1,5 +1,5 @@
 .header {
-  --header-bg: rgb(from black r g b / 80%);
+  --header-bg: rgb(from black r g b / 60%);
   position: fixed;
   top: 0;
   left: 0;
@@ -7,6 +7,7 @@
   height: 8vh;
   text-transform: uppercase;
   background-color: var(--header-bg);
+  backdrop-filter: blur(10px);
   color: white;
   text-align: center;
   overflow-x: clip;
@@ -48,6 +49,7 @@
 .header-fade {
   height: 1vh;
   background-image: linear-gradient(to bottom, var(--header-bg), transparent);
+  backdrop-filter: blur(5px);
 }
 
 .nav-home a {

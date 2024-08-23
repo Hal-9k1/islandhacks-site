@@ -6,9 +6,16 @@
   text-align: center;
   padding: 15vh 5vw 0;
 }
+
 .top-title {
   font-size: clamp(2rem, 8vw, 8rem);
   margin: 0.25em 0;
+}
+
+@media (max-width: 768px) {
+  .top {
+    padding-top: 45vh;
+  }
 }
 
 .top h1 {
@@ -16,7 +23,7 @@
 }
 
 .top h2 {
-  font-size: clamp(0.75rem, 3vw, 3rem);
+  font-size: clamp(0.65rem, 2.5vw, 2.5rem);
   white-space: nowrap;
   margin: 0 0 0.25em 0;
 }
@@ -36,6 +43,10 @@
 
 .top-register-link button:hover {
   transform: scale(1.1);
+}
+
+.top-title, .top-register-link {
+  3px;
 }
 
 /* FAQs */
@@ -108,6 +119,10 @@ thead td {
 }
 
 /* Countdown */
+.countdown {
+  margin-bottom: 60px !important;
+}
+
 .countdown-wrapper {
   display: none;
 }
