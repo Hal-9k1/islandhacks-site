@@ -24,7 +24,7 @@ body {
   min-height: 100vh;
   font-size: 16px;
   line-height: 1.6;
-  background-color: var(--color-peach);
+  background-color: #fff0cb;
 }
 
 h1, h2, h3 {
