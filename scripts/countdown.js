@@ -63,8 +63,8 @@ class Countdown {
     this.#timeElems[3].innerText = sec.toString().padStart(2, '0');
 
     this.#labelElems[0].innerText = day === 1 ? "day" : "days";
-    this.#labelElems[1].innerText = min === 1 ? "min" : "mins";
-    this.#labelElems[2].innerText = hr === 1 ? "hr" : "hrs";
+    this.#labelElems[1].innerText = hr === 1 ? "hr" : "hrs";
+    this.#labelElems[2].innerText = min === 1 ? "min" : "mins";
     this.#labelElems[3].innerText = sec === 1 ? "sec" : "secs";
   }
 }
