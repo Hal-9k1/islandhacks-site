@@ -5,7 +5,7 @@
   },
   {
     "time": "9:15",
-    "activity": "Opening ceremony and theme reveal"
+    "activity": "Opening ceremony"
   },
   {
     "time": "9:30",
@@ -13,7 +13,7 @@
   },
   {
     "time": "10:00",
-    "activity": "Project time",
+    "activity": "Theme reveal, project time",
     "additional": "Coding workshop"
   },
   {
@@ -40,31 +40,26 @@
   },
   {
     "time": "4:00",
-    "activity": "Project time",
-    "additional": "Side games for more prizes"
-  },
-  {
-    "time": "4:30",
     "activity": "Project time"
   },
   {
-    "time": "6:00",
+    "time": "5:45",
     "activity": "Dinner"
   },
   {
-    "time": "7:00",
+    "time": "6:15",
     "activity": "Project submission"
   },
   {
-    "time": "7:15",
+    "time": "6:30",
     "activity": "Project presentation"
   },
   {
     "time": "8:00",
-    "activity": "Raffle"
+    "activity": "Closing ceremony, awards, raffle"
   },
   {
     "time": "9:00",
-    "activity": "Group picture, feedback form, and closing ceremony"
+    "activity": "Group picture and feedback form"
   }
 ]
