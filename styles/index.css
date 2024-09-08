@@ -27,7 +27,7 @@
 .top h2 {
   font-size: clamp(0.65rem, 2.5vw, 2.5rem);
   white-space: nowrap;
-  margin: 0 0 0.25em 0;
+  margin: 0 auto 0.25em auto;
 }
 
 .top-register-link {
@@ -55,6 +55,11 @@
 
 .top-title, .top-register-link a {
   font-family: "Share Tech", sans-serif;
+}
+
+.attendee-thanks {
+  white-space: wrap !important;
+  max-width: 80%;
 }
 
 /* FAQs */

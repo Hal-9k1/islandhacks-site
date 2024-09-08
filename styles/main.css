@@ -1,3 +1,5 @@
+@import /styles/roboto-mono.css;
+
 :root {
   --color-gray: #7a807e;
   --color-gray-brown: #735f58;
@@ -97,6 +99,23 @@ h1, h2, h3 {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+.hackathon-ended .post-event-hide {
+  visibility: hidden;
+}
+
+.hackathon-ended .post-event-remove {
+  display: none;
+}
+
+.post-event-show {
+  display: none;
+}
+
+.hackathon-ended .post-event-show {
+  display: block;
+}
+
 
 @media (max-width: 768px) {
   .subsection.with-image {
